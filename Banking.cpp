@@ -3,13 +3,16 @@
 #include <iostream>
 using namespace std;
 
+// Banking class begin
 class Banking
 {
+  // private access specifier
 private:
   int mCashPool;
   int mMyCash;
 
 public:
+  // constructor
   Banking()
   {
     mCashPool = 10000;
@@ -17,6 +20,7 @@ public:
     cout << "\nThe Bank has $" << mCashPool << " reserved.\n\n";
   }
 
+  // setter method
   bool openMyAccount(int amount)
   {
     mCashPool += amount;
@@ -24,11 +28,13 @@ public:
     return true;
   }
 
+  // getter method
   int getMyBalance()
   {
     return mMyCash;
   }
 
+  // setter method
   bool withdrawMyCash(int amount)
   {
     if (mMyCash >= amount)
@@ -43,6 +49,7 @@ public:
     }
   }
 
+  // setter method
   bool depositMyCash(int amount)
   {
     mCashPool += amount;
@@ -50,9 +57,22 @@ public:
     return true;
   }
 };
+// Banking class end
 
 int main()
 {
+  /*****************************
+   *  Banking System Use Case  *
+   * ***************************
+   *
+   * Assumptions & Constraints:
+   * --------------------------
+   *  1. your banking system only accept integer values, it will provide transaction options to perform and an option to exit the system
+   *  2. the transaction options: open account, deposit cash and withdraw cash
+   *  3. for simplicity, your banking system serves 1 customer at a time
+   *
+   */
+
   int cash, transaction;
   Banking myAccount;
 

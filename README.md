@@ -2,7 +2,7 @@
 
 ## Sample Solution
 
-This repository provides a sample solution of the banking system for your reference.
+This repository provides a sample solution of the banking system ([Banking.cpp](https://github.com/whypam/CppBanking-Solution/blob/main/Banking.cpp)) for your reference.
 
 Link to [Banking System Assignment](https://github.com/whypam/CppBanking-Starter) repo.
 
