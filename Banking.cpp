@@ -1,7 +1,20 @@
-// Encapsulation
+// Assignment Solution: Encapsulation - Object Oriented Programming (OOP)
 
 #include <iostream>
 using namespace std;
+
+/*****************************
+ *  Banking System Use Case  *
+ * ***************************
+ *
+ * Assumptions & Constraints:
+ * --------------------------
+ *  1. your banking system only accept integer values, it will provide transaction options to perform and an option to exit the system
+ *  2. the transaction options: open account, deposit cash, withdraw cash and check balance
+ *  3. open account is a 1-time execution task
+ *  4. for simplicity, your banking system serves 1 customer at a time
+ *
+ */
 
 // Banking class begin
 class Banking
@@ -61,18 +74,6 @@ public:
 
 int main()
 {
-  /*****************************
-   *  Banking System Use Case  *
-   * ***************************
-   *
-   * Assumptions & Constraints:
-   * --------------------------
-   *  1. your banking system only accept integer values, it will provide transaction options to perform and an option to exit the system
-   *  2. the transaction options: open account, deposit cash and withdraw cash
-   *  3. for simplicity, your banking system serves 1 customer at a time
-   *
-   */
-
   int cash, transaction;
   Banking myAccount;
 
